@@ -1,0 +1,253 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 20px;
+    overflow-x: hidden;
+    color: white;
+    background-color: white;
+    font-family: 'Suez One', serif;
+}
+
+header {
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('images/pic4.jfif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.clearfix:after{
+    content: ".";
+    visibility: hidden;
+    display: block;
+    height: 0px;
+    clear: both;
+}
+
+.row{
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.main-nav{
+    float: right;
+    margin-top: 30px;
+}
+
+.main-nav li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 40px;
+}
+
+.main-nav li a{
+    padding: 5px 0;
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    font-weight: 100;
+}
+
+.main-nav li a:hover{
+    border-bottom: 2px solid #2497CA;
+}
+
+.main-content-header{
+    width: 1180px;
+    position: absolute;
+    /*border: 1px solid red;*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1{
+    color: #ff;
+    font-size: 240%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: lighter;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+.btn-full{
+    background-color: transparent;
+    color: #2497CA;
+    margin-right: 15px;
+    border: 1px solid #2497CA;
+}
+
+.btn-full:hover{
+    background-color: #fff;
+}
+
+.btn-nav{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.btn-nav:hover{
+    background-color: #2497CA;
+}
+
+
+/* Portfolio styles*/
+
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+}
+
+.portfolio-img-background {
+    height: 350px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: contrast(75%);
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.logo-wrapper img {
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.img-text-wrapper .subtitle {
+    transition: 1s;
+    font-weight: 600;
+    color: transparent;
+}
+
+.img-text-wrapper:hover .subtitle {
+    font-weight: 500;
+    color: #fff;
+}
+
+.img-darken {
+    transition: 1s;
+    filter:brightness(10%)
+}
+
+
+/* About page */
+.two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile-image-wrapper img {
+    width: 100%;
+}
+
+.profile-content-wrapper {
+    padding: 30px;
+}
+
+.profile-content-wrapper h1 {
+    color: lightseagreen;
+}
+
+.profile-content-wrapper p{
+    color: black;
+    font-weight: lighter;
+}
+
+/*TABLE*/
+.table {
+    color: black;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table th{
+    text-align: left;
+    background-color: #3a6070;
+    color: #fff;
+    padding: 4px 30px 4px 8px;
+    font-weight: lighter;
+}
+
+table td{
+    border: 1px solid #e3e3e3;
+}
+
+.column {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /*ORDERS AND RESERVATION*/
+
+.forms {
+    color: black;
+    text-align: center;
+    display: grid;
+    margin: 8px;
+    background-image: url('images/pic10.jfif');
+    background-blend-mode: hue;
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+    height: 187vh;
+}
+
+/*RESULTS*/
+.results {
+    color: black;
+    text-align: center;
+    display: grid;
+    margin: 8px;
+    font-weight: lighter;
+    background-color: #b3d9ff;
+}

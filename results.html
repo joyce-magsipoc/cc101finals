@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Suez+One&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-wdith, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Results</title>
+</head>
+<body>
+<div class="results">
+    <p>
+        Thank you for your orders and reservations<br>
+        Further instructions and communication will transpire<br>
+        through your email and contact number that you have provided<br><br>
+    </p>
+    <div id="results"></div>
+    <a href="orders&reservation.html">Back to Orders&Reservations</a>
+    <script>
+        const resultsList = document.getElementById('results')
+        new URLSearchParams(window.location.search).forEach((value, 
+        name) => {
+            resultsList.append(`${name}: ${value}`)
+            resultsList.append(document.createElement('br'))
+        })
+    </script>
+</div>
+</body>
+</html>
